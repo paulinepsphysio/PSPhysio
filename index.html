@@ -1,0 +1,460 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8360\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>PS Physio - Pauline Steenkamp Physiotherapy</title>\
+    <style>\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+        \
+        body \{\
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\
+            line-height: 1.6;\
+            color: #333;\
+        \}\
+        \
+        .container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            padding: 0 20px;\
+        \}\
+        \
+        /* Header */\
+        header \{\
+            background: linear-gradient(135deg, #A4C2A5 0%, #5B85AA 100%);\
+            color: white;\
+            padding: 1rem 0;\
+            position: fixed;\
+            width: 100%;\
+            top: 0;\
+            z-index: 1000;\
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);\
+        \}\
+        \
+        nav \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+        \
+        .logo \{\
+            font-size: 1.8rem;\
+            font-weight: 500;\
+            color: white;\
+            text-decoration: none;\
+        \}\
+        \
+        .nav-links \{\
+            display: flex;\
+            list-style: none;\
+            gap: 2rem;\
+        \}\
+        \
+        .nav-links a \{\
+            color: white;\
+            text-decoration: none;\
+            font-weight: 400;\
+            transition: color 0.3s ease;\
+        \}\
+        \
+        .nav-links a:hover \{\
+            color: #EE964B;\
+        \}\
+        \
+        /* Hero Section */\
+        .hero \{\
+            background: linear-gradient(rgba(164, 194, 165, 0.1), rgba(164, 194, 165, 0.1)), #f8f9fa;\
+            padding: 150px 0 100px;\
+            text-align: center;\
+        \}\
+        \
+        .hero h1 \{\
+            font-size: 3rem;\
+            color: #2d3748;\
+            margin-bottom: 1.5rem;\
+            font-weight: 300;\
+        \}\
+        \
+        .hero p \{\
+            font-size: 1.2rem;\
+            color: #6c757d;\
+            margin-bottom: 2rem;\
+            max-width: 600px;\
+            margin-left: auto;\
+            margin-right: auto;\
+        \}\
+        \
+        .btn \{\
+            display: inline-block;\
+            background: linear-gradient(135deg, #A4C2A5 0%, #5B85AA 100%);\
+            color: white;\
+            padding: 1rem 2rem;\
+            border-radius: 50px;\
+            text-decoration: none;\
+            font-weight: 500;\
+            transition: all 0.3s ease;\
+            box-shadow: 0 4px 15px rgba(164, 194, 165, 0.3);\
+        \}\
+        \
+        .btn:hover \{\
+            background: linear-gradient(135deg, #5B85AA 0%, #EE964B 100%);\
+            transform: translateY(-2px);\
+            box-shadow: 0 6px 20px rgba(164, 194, 165, 0.4);\
+        \}\
+        \
+        /* Sections */\
+        .section \{\
+            padding: 80px 0;\
+        \}\
+        \
+        .section-title \{\
+            font-size: 2.5rem;\
+            color: #2d3748;\
+            margin-bottom: 3rem;\
+            font-weight: 300;\
+            text-align: center;\
+        \}\
+        \
+        .section-alt \{\
+            background: #f8f9fa;\
+        \}\
+        \
+        /* About Section */\
+        .about-content \{\
+            display: grid;\
+            grid-template-columns: 1fr 2fr;\
+            gap: 4rem;\
+            align-items: center;\
+        \}\
+        \
+        .about-image img \{\
+            width: 100%;\
+            height: 400px;\
+            object-fit: cover;\
+            border-radius: 20px;\
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);\
+        \}\
+        \
+        .about-text h2 \{\
+            font-size: 2.5rem;\
+            color: #2d3748;\
+            margin-bottom: 2rem;\
+            font-weight: 300;\
+            text-align: left;\
+        \}\
+        \
+        .about-text p \{\
+            font-size: 1.1rem;\
+            color: #4a5568;\
+            margin-bottom: 1.5rem;\
+            line-height: 1.8;\
+        \}\
+        \
+        /* Services */\
+        .services-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\
+            gap: 2rem;\
+        \}\
+        \
+        .service-card \{\
+            background: white;\
+            padding: 2rem;\
+            border-radius: 15px;\
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);\
+            border-left: 4px solid #A4C2A5;\
+            transition: transform 0.3s ease;\
+        \}\
+        \
+        .service-card:hover \{\
+            transform: translateY(-5px);\
+        \}\
+        \
+        .service-card h3 \{\
+            color: #A4C2A5;\
+            margin-bottom: 1rem;\
+            font-size: 1.3rem;\
+            font-weight: 500;\
+        \}\
+        \
+        .service-card p \{\
+            color: #4a5568;\
+            line-height: 1.6;\
+        \}\
+        \
+        /* Booking Section */\
+        .booking \{\
+            background: linear-gradient(135deg, #A4C2A5 0%, #5B85AA 100%);\
+            color: white;\
+            text-align: center;\
+        \}\
+        \
+        .booking h2 \{\
+            font-size: 2.5rem;\
+            margin-bottom: 1rem;\
+            font-weight: 300;\
+        \}\
+        \
+        .booking p \{\
+            font-size: 1.2rem;\
+            margin-bottom: 2rem;\
+            opacity: 0.9;\
+        \}\
+        \
+        .booking-widget \{\
+            background: white;\
+            border-radius: 15px;\
+            padding: 2rem;\
+            max-width: 600px;\
+            margin: 0 auto;\
+            color: #333;\
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);\
+        \}\
+        \
+        .booking-widget h5 \{\
+            color: #A4C2A5;\
+            margin-bottom: 1rem;\
+        \}\
+        \
+        /* Contact */\
+        .contact-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+            gap: 2rem;\
+        \}\
+        \
+        .contact-card \{\
+            background: white;\
+            padding: 2rem;\
+            border-radius: 15px;\
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);\
+            text-align: center;\
+        \}\
+        \
+        .contact-icon \{\
+            width: 60px;\
+            height: 60px;\
+            background: linear-gradient(135deg, #A4C2A5 0%, #5B85AA 100%);\
+            border-radius: 50%;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            color: white;\
+            font-size: 1.5rem;\
+            margin: 0 auto 1rem;\
+        \}\
+        \
+        .contact-card h5 \{\
+            color: #2d3748;\
+            margin-bottom: 1rem;\
+            font-weight: 500;\
+        \}\
+        \
+        .contact-card p \{\
+            color: #4a5568;\
+            line-height: 1.6;\
+        \}\
+        \
+        /* Footer */\
+        footer \{\
+            background: #283D3B;\
+            color: white;\
+            text-align: center;\
+            padding: 3rem 0;\
+        \}\
+        \
+        footer p \{\
+            margin-bottom: 0.5rem;\
+            opacity: 0.9;\
+        \}\
+        \
+        /* Mobile Responsive */\
+        @media (max-width: 768px) \{\
+            .nav-links \{\
+                display: none;\
+            \}\
+            \
+            .hero h1 \{\
+                font-size: 2rem;\
+            \}\
+            \
+            .hero \{\
+                padding: 120px 0 80px;\
+            \}\
+            \
+            .about-content \{\
+                grid-template-columns: 1fr;\
+                text-align: center;\
+            \}\
+            \
+            .about-image \{\
+                order: -1;\
+            \}\
+            \
+            .about-text h2 \{\
+                text-align: center;\
+            \}\
+            \
+            .section \{\
+                padding: 60px 0;\
+            \}\
+            \
+            .section-title \{\
+                font-size: 2rem;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <!-- Header -->\
+    <header>\
+        <div class="container">\
+            <nav>\
+                <a href="#home" class="logo">PS Physio</a>\
+                <ul class="nav-links">\
+                    <li><a href="#home">Home</a></li>\
+                    <li><a href="#about">About</a></li>\
+                    <li><a href="#services">Services</a></li>\
+                    <li><a href="#booking">Book</a></li>\
+                    <li><a href="#contact">Contact</a></li>\
+                </ul>\
+            </nav>\
+        </div>\
+    </header>\
+\
+    <!-- Hero Section -->\
+    <section id="home" class="hero">\
+        <div class="container">\
+            <h1>Professional Physiotherapy Care</h1>\
+            <p>Restore movement, reduce pain, and improve your quality of life with evidence-based treatment and personalised rehabilitation plans.</p>\
+            <a href="#booking" class="btn">Book Your Appointment</a>\
+        </div>\
+    </section>\
+\
+    <!-- About Section -->\
+    <section id="about" class="section">\
+        <div class="container">\
+            <div class="about-content">\
+                <div class="about-image">\
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pauline Steenkamp - Physiotherapist">\
+                </div>\
+                <div class="about-text">\
+                    <h2>About PS Physio</h2>\
+                    <p>I'm Pauline Steenkamp, a qualified healthcare professional and physiotherapist with over ten years of experience in physiotherapy, healthcare management, and patient-centered rehabilitation.</p>\
+                    <p>My background spans musculoskeletal, orthopedic, Pilates, and aquatic therapy, alongside leadership roles managing multidisciplinary teams and ensuring the highest standards of care.</p>\
+                    <p>I am passionate about helping people restore movement, reduce pain, and improve quality of life through evidence-based treatment and personalised rehabilitation plans. Whether working in the clinic, on-site, or through mobile services, my goal is to deliver compassionate, effective care that empowers every patient on their recovery journey.</p>\
+                    <p>We have a lovely space in Harrington Street with client parking.</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Services Section -->\
+    <section id="services" class="section section-alt">\
+        <div class="container">\
+            <h2 class="section-title">Our Services</h2>\
+            <div class="services-grid">\
+                <div class="service-card">\
+                    <h3>\uc0\u55358 \u56756  Musculoskeletal Injuries</h3>\
+                    <p>Comprehensive treatment for muscle, bone, and joint injuries to restore optimal function and mobility.</p>\
+                </div>\
+                <div class="service-card">\
+                    <h3>\uc0\u55357 \u56454  Sports Massage</h3>\
+                    <p>Specialized massage therapy to enhance performance, prevent injury, and accelerate recovery.</p>\
+                </div>\
+                <div class="service-card">\
+                    <h3>\uc0\u55356 \u57317  Post-operative Rehabilitation</h3>\
+                    <p>Expert guidance and support for safe, effective recovery following surgical procedures.</p>\
+                </div>\
+                <div class="service-card">\
+                    <h3>\uc0\u55358 \u56792  Pilates Classes (Private)</h3>\
+                    <p>Personalized Pilates sessions to improve core strength, flexibility, and overall body awareness.</p>\
+                </div>\
+                <div class="service-card">\
+                    <h3>\uc0\u9917  Sports Injuries</h3>\
+                    <p>Specialized treatment for sports-related injuries to get athletes back to peak performance.</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Booking Section -->\
+    <section id="booking" class="section booking">\
+        <div class="container">\
+            <h2>Book Your Appointment</h2>\
+            <p>Schedule your consultation with Pauline Steenkamp today</p>\
+            <div class="booking-widget">\
+                <h5>Ready to get started?</h5>\
+                <p style="margin-bottom: 1rem;">Call us or email to schedule your appointment</p>\
+                <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong> +27 XX XXX XXXX</p>\
+                <p style="margin-bottom: 1rem;"><strong>Email:</strong> info@psphysio.co.za</p>\
+                <p style="color: #6c757d; font-size: 0.9rem; margin-bottom: 0;"><em>Online booking system coming soon!</em></p>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Contact Section -->\
+    <section id="contact" class="section">\
+        <div class="container">\
+            <h2 class="section-title">Contact Information</h2>\
+            <div class="contact-grid">\
+                <div class="contact-card">\
+                    <div class="contact-icon">\uc0\u55357 \u56525 </div>\
+                    <h5>Location</h5>\
+                    <p>Harrington Street<br>Cape Town, South Africa<br>Client parking available</p>\
+                </div>\
+                <div class="contact-card">\
+                    <div class="contact-icon">\uc0\u55357 \u56542 </div>\
+                    <h5>Phone</h5>\
+                    <p>+27 XX XXX XXXX</p>\
+                </div>\
+                <div class="contact-card">\
+                    <div class="contact-icon">\uc0\u9993 \u65039 </div>\
+                    <h5>Email</h5>\
+                    <p>info@psphysio.co.za</p>\
+                </div>\
+                <div class="contact-card">\
+                    <div class="contact-icon">\uc0\u55357 \u56658 </div>\
+                    <h5>Operating Hours</h5>\
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 2:00 PM<br>Sunday: Closed</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Footer -->\
+    <footer>\
+        <div class="container">\
+            <p>&copy; 2025 PS Physio - Pauline Steenkamp Physiotherapy. All rights reserved.</p>\
+            <p>Professional physiotherapy services in Cape Town</p>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        // Smooth scrolling for navigation links\
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => \{\
+            anchor.addEventListener('click', function (e) \{\
+                e.preventDefault();\
+                const target = document.querySelector(this.getAttribute('href'));\
+                if (target) \{\
+                    target.scrollIntoView(\{\
+                        behavior: 'smooth',\
+                        block: 'start'\
+                    \});\
+                \}\
+            \});\
+        \});\
+    </script>\
+</body>\
+</html>}
